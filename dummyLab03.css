@@ -1,0 +1,120 @@
+/*Menu and navbar*/
+body{
+	font-family: Snell Roundhand, cursive;
+}
+
+#menu{
+	background-color: black;
+	height: 160vh;
+	padding: 0 6vh;	
+	font-size: 14px;
+	color: yellow;
+	font-family: Brush Script MT, cursive;
+}
+@media only screen and (max-width: 186vh){
+	#menu{ height: 330vh; }
+}
+#menu header{
+	display: block;		
+	margin-top: 0;
+}
+#menu header h1{
+	margin-top: 1vh;
+	font-size: 16px;	
+}
+#menu header h1#nameAndid{
+	font-size: 12px; 
+	color: white; 
+	font-weight: bold;
+	font-family: Brush Script MT, cursive;
+}
+#menu header h6{
+	font-size: 16px;
+	margin-bottom: 0;	
+	font-weight: bold;
+}
+
+#menu nav {
+	margin-top: 0;
+	display: block;			
+}
+
+#menu nav button{
+	width: 110%;
+	height: 50px;	
+}
+#menu nav button a{
+	font-family: Arial, sans-serif;	
+	font-size: 18px;
+	font-weight: bolder;
+	color: yellow;			
+}
+
+#menu nav a{
+	display: block;
+	cursor: pointer;	
+	width: 10vh;
+	color: red;	
+}
+
+#menu nav h6{
+	font-weight: bold;
+}
+
+/*Main content*/
+main#content{
+	font-family: Brush Script MT, cursive;
+	color:red;
+	font-size: 20pt;		
+	animation: fade-in 3s;		
+	background: 100% 50% fixed url("https://cdn.vox-cdn.com/thumbor/FAVWmYcN68QTXpaqIOAt5TTW43Y=/40x0:1240x800/1200x800/filters:focal(40x0:1240x800)/cdn.vox-cdn.com/uploads/chorus_image/image/37234382/pokemon_pikachu_raichu_1280x800_28844.0.0.jpg");
+}
+	/*Fade-in text*/	
+@keyframes fade-in{
+	from { opacity: 0;}
+	to	{ opacity: 1; }	
+}
+
+	/*Image entrance*/
+main#content img[src="internet.gif"]{
+	padding-top: 4vh;
+	animation: imgEntrance 2s;
+}
+@keyframes imgEntrance{
+	from { width: 100vh; }
+	to	{ width: 120; }	
+}
+	/*2d animation on "Lab1" Header */
+main#content h1#title{
+	font-weight: bold;
+	animation: titleSpin 2.5s;
+	display: inline-block;
+}
+@keyframes titleSpin{
+	0% 	 { transform: rotateY(0deg); }
+	20%  { transform: rotateY(180deg); }
+	40%  { transform: rotateY(360deg); }
+	60%  { transform: rotateY(180deg); }
+	80%  { transform: rotateY(360deg); }
+	90%  { transform: rotateY(180deg); }
+	100% { transform: rotateY(360deg); }
+}
+
+main#content ol{
+	background-color: rgba(255,165,0,0.4);
+}
+
+main#content p#Submission{
+	background-color: rgba(255,165,0,0.4);
+}
+
+main#content .activitiespt2 {
+	margin-top:10px;
+}
+main#content .submissionpt2{	
+	margin-top:10px;
+}	
+
+.test{
+	
+}

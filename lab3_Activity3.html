@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta http-equiv="refresh" content="5">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CPS530 Lab 3</title>
+<!-- CSS external files -->
+	<link rel="stylesheet" href="lab3_Activity3_MobileCSS.css"> <!-- later on: min-width will be 700px i.e. starting territory of tablets -->
+<!-- enabling bootstrap 4 -->	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>	
+<!-- enabling bootstrap 3 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+<!-- enabling W3 responsive CSS -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- script to toggle between menu icon in sm devices, and a horizontal nav bar in larger devices -->
+	<script>
+			function toggleMenu() {
+				var x = document.getElementById("hamburgerMenu");
+				if (x.className.indexOf("w3-show") == -1){
+					x.className += " w3-show";
+				} else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+	</script>
+</head>
+<body>	
+<!-- Navigation Bar (from mobile to Desktop) -->
+	<div id="navbar" class="w3-top w3-row w3-container pt-0">
+		<nav class="w3-bar w3-black w3-border">
+			<a href="#home" class="w3-bar-item w3-button"><b>home</b></a>
+			<a href="#link1" class="w3-bar-item w3-button w3-hide-small">Link1</a>
+			<a href="#link2" class="w3-bar-item w3-button w3-hide-small">Link2</a>
+			<a href="#link3" class="w3-bar-item w3-button w3-hide-small">Link3</a>
+			<a href="#link4" class="w3-bar-item w3-button w3-hide-small">Link4</a>
+			<a href="#link5" class="w3-bar-item w3-button w3-hide-small">Link5</a>
+			<a href="#link6" class="w3-bar-item w3-button w3-hide-small">Link6</a>
+			<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-black w3-right w3-hide-medium w3-hide-large" onclick="toggleMenu()">&#9776;</a>			
+		</nav> 	
+		<div id="hamburgerMenu" class="w3-bar-block w3-black w3-hide w3-hide-medium w3-hide-large">
+			<a href="#link1" class="w3-bar-item w3-button w3-mobile">Link1</a>
+			<a href="#link2" class="w3-bar-item w3-button w3-mobile">Link2</a>
+			<a href="#link3" class="w3-bar-item w3-button w3-mobile">Link3</a>
+			<a href="#link4" class="w3-bar-item w3-button w3-mobile">Link4</a>
+			<a href="#link5" class="w3-bar-item w3-button w3-mobile">Link5</a>
+			<a href="#link6" class="w3-bar-item w3-button w3-mobile">Link6</a>			
+		</div>
+	</div>
+
+	<main>
+<!-- The content at mobile level-->
+<!--		<div class="w3-hide-medium w3-hide-large"> -->
+		<div class="w3-center">
+			<article id="home" class="w3-container w3-block w3-mobile pt-5 w3-show-inline-block w3-red" style="width: 400px">
+				<header>
+					<h1 id="link1" class="w3-center w3-mobile">Link 1</h1>
+				</header>
+				<p class="w3-justify w3-mobile">What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</article>
+			
+			<article id="link2" class="link w3-container w3-block w3-mobile pt-5 w3-show-inline-block w3-orange" style="width: 400px">
+				<header>
+					<h1 class="w3-center w3-mobile">Link 2</h1>
+				</header>
+				<p class="w3-justify w3-mobile">What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the printing and typesetting ind2stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</article>
+
+			<article id="link3" class="w3-container w3-block w3-mobile pt-5 w3-show-inline-block w3-yellow" style="width: 400px">
+				<header>
+					<h1  class="w3-center w3-mobile">Link 3</h1>
+				</header>
+				<p class="w3-justify w3-mobile">What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</article>
+
+			<article id="link4" class="w3-container w3-block w3-mobile pt-5 w3-show-inline-block w3-red" style="width: 400px">
+				<header>
+					<h1  class="w3-center w3-mobile">Link 4</h1>
+				</header>
+				<p class="w3-justify w3-mobile">What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</article>
+
+			<article id="link5" class="w3-container w3-block w3-mobile pt-5 w3-show-inline-block w3-orange" style="width: 400px">
+				<header>
+					<h1  class="w3-center w3-mobile">Link 5</h1>
+				</header>
+				<p class="w3-justify w3-mobile">What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</article>
+
+			<article id="link6" class="w3-container w3-block w3-mobile pt-5 w3-show-inline-block w3-yellow" style="width: 400px">
+				<header>
+					<h1  class="w3-center w3-mobile">Link 6</h1>
+				</header>
+				<p class="w3-justify w3-mobile">What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</article>
+
+		</div>	
+
+	</main>	
+
+	<footer>
+
+	</footer>
+</body>
+</html>
